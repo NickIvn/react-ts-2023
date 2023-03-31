@@ -6,6 +6,7 @@ function Layout() {
       <header>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
+        <NavLink to="/join">Join Us</NavLink>
       </header>
       <main className="container">
         <Outlet />
