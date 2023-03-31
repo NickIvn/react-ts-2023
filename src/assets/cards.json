@@ -1,0 +1,50 @@
+{"products": [
+    {
+      "id": 1,
+      "title": "Card 1",
+      "description": "Here is the card's 1 description",
+      "imageUrl": "https://picsum.photos/300/300?random=1"
+    },
+    {
+      "id": 2,
+      "title": "Card 2",
+      "description": "Here is the card's 2 description",
+      "imageUrl": "https://picsum.photos/300/300?random=2"
+    },
+    {
+      "id": 3,
+      "title": "Card 3",
+      "description": "Here is the card's 3 description",
+      "imageUrl": "https://picsum.photos/300/300?random=3"
+    },
+    {
+      "id": 4,
+      "title": "Card 4",
+      "description": "Here is the card's 4 description",
+      "imageUrl": "https://picsum.photos/300/300?random=4"
+    },
+    {
+      "id": 5,
+      "title": "Card 5",
+      "description": "Here is the card's 5 description",
+      "imageUrl": "https://picsum.photos/300/300?random=5"
+    },
+    {
+      "id": 6,
+      "title": "Card 6",
+      "description": "Here is the card's 6 description",
+      "imageUrl": "https://picsum.photos/300/300?random=6"
+    },
+    {
+      "id": 7,
+      "title": "Card 7",
+      "description": "Here is the card's 7 description",
+      "imageUrl": "https://picsum.photos/300/300?random=7"
+    },
+    {
+      "id": 8,
+      "title": "Card 8",
+      "description": "Here is the card's 8 description",
+      "imageUrl": "https://picsum.photos/300/300?random=8"
+    }
+  ]}
