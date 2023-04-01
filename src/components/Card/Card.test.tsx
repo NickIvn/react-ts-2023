@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { Card } from "./Card";
+import Card from "./Card";
 
 const data = {
   id: 1,
@@ -10,7 +10,7 @@ const data = {
 
 describe("renders learn react link", () => {
   it("render list", () => {
-    render(<Card {...data} />);
+    render(<Card product={data} />);
     expect(screen.getByText(data.title)).toBeInTheDocument();
     expect(screen.getByAltText(data.title)).toBeInTheDocument();
     expect(screen.getAllByTestId("post").length).toEqual(1);
