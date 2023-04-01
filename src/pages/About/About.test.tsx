@@ -1,10 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import { About } from "./About";
+import About from "./About";
 
 describe("renders learn react link", () => {
   test("render App", () => {
-    const page = { title: "About page", callback: () => {} };
-    render(<About {...page} />);
+    render(<About />);
     expect(screen.getByText(/About/i)).toBeInTheDocument();
   });
 });

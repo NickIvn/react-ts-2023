@@ -1,19 +1,10 @@
-import React from "react";
-import { IRouter } from "../../type";
+const About = () => {
+  return (
+    <div>
+      <h1>About</h1>
+      <p>Some text</p>
+    </div>
+  );
+};
 
-class About extends React.Component<IRouter> {
-  constructor(props: IRouter) {
-    super(props);
-    this.props.callback(this.props);
-  }
-
-  render(): React.ReactNode {
-    return (
-      <div>
-        <h1>About</h1>
-      </div>
-    );
-  }
-}
-
-export { About };
+export default About;
