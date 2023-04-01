@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchBar } from "../../components/SearchBar/SearchBar";
-import { Cards } from "../../components/Cards/Cards";
+import Cards from "../../components/Cards/Cards";
 import { IRouter } from "../../type";
 
 class Home extends React.Component<IRouter> {
