@@ -14,7 +14,7 @@ export class Card extends Component<MemberProps> {
         <img src={item.imageUrl} alt={item.name} height="200" />
         <h2>{item.name}</h2>
         <h2>{item.surname}</h2>
-        <p>{item.date}</p>
+        <p>DoB: {item.date}</p>
         <div className="post-gender">
           gender: <span>{item.gender}</span>{" "}
         </div>

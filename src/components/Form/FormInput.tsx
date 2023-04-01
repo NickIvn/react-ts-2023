@@ -13,6 +13,14 @@ const FormInput: React.FC<{
     formState: { errors },
     reset,
   } = useForm<FormAdd>();
+  const validateDate = (date: string) => {
+    const today = new Date();
+    const inputDate = new Date(date);
+    if (inputDate > today) {
+      return "Date should be no later than today";
+    }
+    return true;
+  };
   const [formMessage, setFormMessage] = useState<boolean>(false);
   const handlemember: SubmitHandler<FormAdd> = (data) => {
     const member = {
@@ -75,7 +83,10 @@ const FormInput: React.FC<{
             className="form-input"
             type="date"
             id="date"
-            {...register("date", { required: "The field is required" })}
+            {...register("date", {
+              required: "The field is required",
+              validate: validateDate,
+            })}
           />
           <p className="form-error">
             {errors.date?.message && errors.date.message}
