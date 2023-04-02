@@ -17,7 +17,7 @@ describe("Card", () => {
     render(<Card member={member} />);
     expect(screen.getByText("Mock Name")).toBeInTheDocument();
     expect(screen.getByText("Mock Surname")).toBeInTheDocument();
-    expect(screen.getByText("2023-03-26")).toBeInTheDocument();
+    expect(screen.getByText("DoB: 2023-03-26")).toBeInTheDocument();
     expect(screen.getByText("gender:")).toHaveTextContent(
       "gender: Mock Gender"
     );

@@ -38,7 +38,9 @@ const FormInput: React.FC<{
     <div className="box-form">
       <form role="form" onSubmit={handleSubmit(handlemember)}>
         <div className="form-box">
-          <label className="form-label">Name:</label>
+          <label className="form-label" htmlFor="name">
+            Name:
+          </label>
           <input
             className="form-input"
             type="text"
@@ -58,7 +60,9 @@ const FormInput: React.FC<{
         </div>
 
         <div className="form-box">
-          <label className="form-label">Surname:</label>
+          <label className="form-label" htmlFor="surname">
+            Surname:
+          </label>
           <input
             className="form-input"
             type="text"
@@ -78,7 +82,9 @@ const FormInput: React.FC<{
         </div>
 
         <div className="form-box">
-          <label className="form-label">Date Of Birth:</label>
+          <label className="form-label" htmlFor="date">
+            Date Of Birth:
+          </label>
           <input
             className="form-input"
             type="date"
