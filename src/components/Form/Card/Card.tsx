@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MemberProps } from "../utils/Form.type";
-import "../../../components/Card/Card.css";
+import "./Card.css";
 
 export class Card extends Component<MemberProps> {
   constructor(props: MemberProps) {
@@ -10,15 +10,15 @@ export class Card extends Component<MemberProps> {
   render() {
     const item = this.props.member;
     return (
-      <div className="post" data-testid="post">
+      <div className="form" data-testid="form">
         <img src={item.imageUrl} alt={item.name} height="200" />
         <h2>{item.name}</h2>
         <h2>{item.surname}</h2>
         <p>DoB: {item.date}</p>
-        <div className="post-gender">
+        <div className="form-gender">
           gender: <span>{item.gender}</span>{" "}
         </div>
-        <div className="post-category">
+        <div className="form-category">
           category: <span>{item.category}</span>{" "}
         </div>
       </div>
