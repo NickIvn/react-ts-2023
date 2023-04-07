@@ -4,6 +4,9 @@ import Card from "./Card";
 const data = {
   id: 1,
   title: "Card 1",
+  country: "Country",
+  length: "100 km",
+  difficulty: "medium",
   description: "Here is the card's 1 description",
   imageUrl: "https://picsum.photos/300/300?random=1",
 };
