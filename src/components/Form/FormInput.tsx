@@ -12,7 +12,7 @@ const FormInput: React.FC<{
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<FormAdd>();
+  } = useForm<FormAdd>({ reValidateMode: "onSubmit" });
   const validateDate = (date: string) => {
     const today = new Date();
     const inputDate = new Date(date);
@@ -28,8 +28,8 @@ const FormInput: React.FC<{
       ...data,
       imageUrl: URL.createObjectURL(data.imageUrl[0] as unknown as Blob),
     };
-    onAddCard(member);
     reset();
+    onAddCard(member);
     setFormMessage(true);
     setTimeout(() => setFormMessage(false), 4000);
   };
