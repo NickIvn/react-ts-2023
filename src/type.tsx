@@ -3,7 +3,7 @@ export interface ICard {
   title: string;
   country: string;
   length: string;
-  level: string;
+  difficulty: string;
   description: string;
   imageUrl: string;
 }
