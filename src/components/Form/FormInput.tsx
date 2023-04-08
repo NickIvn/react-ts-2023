@@ -49,7 +49,7 @@ const FormInput: React.FC<{
             {...register("name", {
               required: "The field is required",
               pattern: {
-                value: /^[A-Z].*/,
+                value: /^[A-ZА-Я].*/,
                 message: "Start with a capital letter",
               },
             })}
@@ -71,7 +71,7 @@ const FormInput: React.FC<{
             {...register("surname", {
               required: "The field is required",
               pattern: {
-                value: /^[A-Z].*/,
+                value: /^[A-ZА-Я].*/,
                 message: "Start with a capital letter",
               },
             })}
