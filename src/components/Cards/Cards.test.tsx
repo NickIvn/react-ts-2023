@@ -4,6 +4,6 @@ import Cards from "./Cards";
 describe("renders learn react link", () => {
   it("render list", () => {
     render(<Cards />);
-    expect(screen.getAllByTestId("post").length).toEqual(8);
+    expect(screen.getAllByTestId("post").length).toEqual(12);
   });
 });
