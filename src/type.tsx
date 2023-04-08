@@ -1,6 +1,9 @@
 export interface ICard {
   id: number;
   title: string;
+  country: string;
+  length: string;
+  difficulty: string;
   description: string;
   imageUrl: string;
 }
