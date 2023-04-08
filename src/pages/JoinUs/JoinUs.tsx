@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import FormInput from "../../components/Form/FormInput";
 import { ICard } from "../../components/Form/Card/Card.props";
 import { Card } from "../../components/Form/Card/Card";
-import "../../components/Cards/Cards.css";
+// import "../../components/Cards/Cards.css";
 
 const JoinUs = () => {
   const [members, setmembers] = useState<ICard[]>([]);
