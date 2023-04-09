@@ -8,8 +8,8 @@ describe("Card", () => {
       id: 1,
       name: "Terminator",
       poster_path: "/image",
-      overview: "some some long text",
-      first_air_date: "12-02-2003",
+      vote_average: 8.8,
+      origin_country: "US",
     };
     render(
       <MemoryRouter initialEntries={["/"]}>

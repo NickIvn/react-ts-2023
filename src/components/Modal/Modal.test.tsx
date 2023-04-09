@@ -9,7 +9,8 @@ describe("Modal", () => {
       name: "Terminator",
       overview: "Some some long text",
       poster_path: "/image",
-      first_air_date: "12-02-2003",
+      vote_average: 8.8,
+      origin_country: "US",
     };
     render(
       <MemoryRouter initialEntries={["/"]}>
