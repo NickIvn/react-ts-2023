@@ -15,7 +15,14 @@ const Card = ({ movie, onClick }: ICard) => {
     <div className="post" data-testid="post" onClick={onClick}>
       <img src={getPosterURL(movie.poster_path)} alt={movie.name} width="200" />
       <h2>{movie.name}</h2>
-      <p>{movie.first_air_date}</p>
+      <p>
+        <span className="rate">Rate:</span>
+        {movie.vote_average}
+      </p>
+      <p>
+        <span className="country">Country:</span>
+        {movie.origin_country}
+      </p>
     </div>
   );
 };

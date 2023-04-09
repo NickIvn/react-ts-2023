@@ -27,7 +27,7 @@ const Cards = ({ searchQuery }: CardsProps) => {
           );
           setMovies(data.results);
         } else {
-          const { data } = await ApiService.get("tv/popular");
+          const { data } = await ApiService.get("tv/top_rated");
           setMovies(data.results);
         }
       } catch (error) {
