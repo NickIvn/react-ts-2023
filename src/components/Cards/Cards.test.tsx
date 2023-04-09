@@ -15,9 +15,9 @@ describe("Cards", () => {
         </MemoryRouter>
       );
     });
-    let someCard = screen.queryByText("Al-Kabir Awy");
+    let someCard = screen.queryByText("Breaking Bad");
     expect(someCard).toBe(null);
-    someCard = await screen.findByText("Al-Kabir Awy");
+    someCard = await screen.findByText("Breaking Bad");
     expect(someCard).toBeInTheDocument();
   });
 });
