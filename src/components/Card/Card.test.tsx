@@ -1,21 +1,28 @@
 import { render, screen } from "@testing-library/react";
 import Card from "./Card";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
 
-const data = {
-  id: 1,
-  title: "Card 1",
-  country: "Country",
-  length: "100 km",
-  difficulty: "medium",
-  description: "Here is the card's 1 description",
-  imageUrl: "https://picsum.photos/300/300?random=1",
-};
-
-describe("renders learn react link", () => {
-  it("render list", () => {
-    render(<Card product={data} />);
-    expect(screen.getByText(data.title)).toBeInTheDocument();
-    expect(screen.getByAltText(data.title)).toBeInTheDocument();
-    expect(screen.getAllByTestId("post").length).toEqual(1);
+describe("Card", () => {
+  it("renders Card component with correct data", () => {
+    const movie = {
+      id: 1,
+      name: "Terminator",
+      poster_path: "/image",
+      overview: "some some long text",
+      first_air_date: "12-02-2003",
+    };
+    render(
+      <MemoryRouter initialEntries={["/"]}>
+        <Routes>
+          <Route path="/" element={<Card movie={movie} onClick={() => {}} />} />
+        </Routes>
+      </MemoryRouter>
+    );
+    expect(screen.getByText(movie.name)).toBeInTheDocument();
+    expect(screen.getByAltText(movie.name)).toHaveAttribute(
+      "src",
+      `https://www.themoviedb.org/t/p/w220_and_h330_face/${movie.poster_path}`
+    );
+    expect(screen.getByTestId("post")).toBeInTheDocument();
   });
 });
