@@ -23,6 +23,7 @@ export interface IMovie {
   poster_path: string;
   vote_average: number;
   origin_country: string;
+  overview: string;
 }
 
 export interface ICharacter {
