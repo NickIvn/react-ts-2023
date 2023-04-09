@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SearchBar.css";
 import { BsSearch } from "react-icons/bs";
 
@@ -11,12 +11,18 @@ const SearchBar = ({ onSearch }: SearchBarProps) => {
     () => localStorage.getItem("search") ?? ""
   );
 
+  useEffect(() => {
+    const value = localStorage.getItem("search") ?? "";
+    onSearch(value);
+  }, [onSearch, searchValue]);
+
   const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
     setSearchValue(event.currentTarget.value);
   };
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
+      localStorage.setItem("search", searchValue);
       onSearch(searchValue);
     }
   };
