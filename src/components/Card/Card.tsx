@@ -16,7 +16,7 @@ const Card = ({ movie, onClick }: ICard) => {
       <img src={getPosterURL(movie.poster_path)} alt={movie.name} width="200" />
       <h2>{movie.name}</h2>
       <p>
-        <span className="rate">Rate:</span>
+        <span className="rate">Rating:</span>
         {movie.vote_average}
       </p>
       <p>
