@@ -1,13 +1,20 @@
-import SearchBar from "../../components/SearchBar/SearchBar";
 import Cards from "../../components/Cards/Cards";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import { useState } from "react";
 import "./Home.css";
 
 const Home = () => {
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
+
   return (
-    <div className="home-background">
-      <SearchBar />
-      <Cards />
-    </div>
+    <>
+      <SearchBar onSearch={handleSearch} />
+      <Cards searchQuery={searchQuery} />
+    </>
   );
 };
 

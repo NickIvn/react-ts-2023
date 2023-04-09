@@ -16,3 +16,34 @@ export interface IRouter {
   title: string;
   callback: (title: IStatePage) => void;
 }
+
+export interface IMovie {
+  id: number;
+  name: string;
+  poster_path: string;
+  first_air_date: string;
+  overview: string;
+}
+
+export interface ICharacter {
+  _id: string;
+  name: string;
+  race: string;
+  gender: string;
+  birth: string;
+  death: string;
+  hair: string;
+  height: string;
+  spouse: string;
+  wikiUrl: string;
+  image: string;
+}
+
+export interface ApiResponse<T> {
+  docs: T[];
+  total: number;
+  limit: number;
+  offset: number;
+  page: number;
+  pages: number;
+}
