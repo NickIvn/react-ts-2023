@@ -8,7 +8,9 @@ interface IModal {
 }
 
 const getPosterURL = (poster_path: string) => {
-  return `https://www.themoviedb.org/t/p/w220_and_h330_face/${poster_path}`;
+  return poster_path
+    ? `https://www.themoviedb.org/t/p/w220_and_h330_face/${poster_path}`
+    : "";
 };
 
 const Modal = ({ movie, onClose }: IModal) => {

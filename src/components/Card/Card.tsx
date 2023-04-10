@@ -7,7 +7,10 @@ interface ICard {
   onClick: () => void;
 }
 
-const getPosterURL = (poster_path: string) => {
+const getPosterURL = (poster_path: string | null | undefined) => {
+  if (!poster_path) {
+    return "https://upload.wikimedia.org/wikipedia/commons/1/16/No_image_available_450_x_600.svg";
+  }
   return `https://www.themoviedb.org/t/p/w220_and_h330_face/${poster_path}`;
 };
 const Card = ({ movie, onClick }: ICard) => {
