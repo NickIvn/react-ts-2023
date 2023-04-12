@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MemberProps } from "../utils/Form.type";
+import { MemberProps } from "../../../type";
 import "./Card.css";
 
 export class Card extends Component<MemberProps> {

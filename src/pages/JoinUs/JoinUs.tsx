@@ -1,12 +1,12 @@
 import { useState, useCallback } from "react";
 import FormInput from "../../components/Form/FormInput";
-import { ICard } from "../../components/Form/Card/Card.props";
+import { IForm } from "../../type";
 import { Card } from "../../components/Form/Card/Card";
 import "../../components/Cards/Cards.css";
 
 const JoinUs = () => {
-  const [members, setmembers] = useState<ICard[]>([]);
-  const updatemember = useCallback((newCard: ICard) => {
+  const [members, setmembers] = useState<IForm[]>([]);
+  const updatemember = useCallback((newCard: IForm) => {
     setmembers((prevmembers) => [...prevmembers, newCard]);
   }, []);
 

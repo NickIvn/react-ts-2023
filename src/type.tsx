@@ -26,25 +26,17 @@ export interface IMovie {
   overview?: string;
 }
 
-export interface ICharacter {
-  _id: string;
+export interface IForm {
+  id: number;
   name: string;
-  race: string;
+  surname: string;
+  imageUrl: string;
+  date: string;
+  rules: boolean;
+  category: string;
   gender: string;
-  birth: string;
-  death: string;
-  hair: string;
-  height: string;
-  spouse: string;
-  wikiUrl: string;
-  image: string;
 }
 
-export interface ApiResponse<T> {
-  docs: T[];
-  total: number;
-  limit: number;
-  offset: number;
-  page: number;
-  pages: number;
-}
+export type MemberProps = {
+  member: IForm;
+};
