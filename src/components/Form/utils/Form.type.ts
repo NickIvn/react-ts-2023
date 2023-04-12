@@ -1,9 +1,3 @@
-import { ICard } from "../Card/Card.props";
-
-export type MemberProps = {
-  member: ICard;
-};
-
 export type FormAdd = {
   id?: number;
   name: string;

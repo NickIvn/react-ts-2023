@@ -1,11 +1,11 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import React, { useState } from "react";
 import "./FormInput.css";
-import { ICard } from "./Card/Card.props";
+import { IForm } from "../../type";
 import { FormAdd } from "./utils/Form.type";
 
 const FormInput: React.FC<{
-  onAddCard: (member: ICard) => void;
+  onAddCard: (member: IForm) => void;
 }> = ({ onAddCard }) => {
   const {
     register,
