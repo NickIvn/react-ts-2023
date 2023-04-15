@@ -18,7 +18,7 @@ const Cards = ({ searchQuery }: CardsProps) => {
   const [selectedMovie, setSelectedMovie] = useState<IMovie | null>(null);
   const filteredMovies = useSelector((state: RootState) =>
     movies.filter((movie) =>
-      movie.title.toLowerCase().includes(searchQuery.toLowerCase())
+      movie.name.toLowerCase().includes(searchQuery.toLowerCase())
     )
   );
 

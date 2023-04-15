@@ -10,7 +10,7 @@ export const movieApi = createApi({
   endpoints: (builder) => ({
     getTopRatedMovies: builder.query<IMovieResult[], number>({
       query: (page = 1) => ({
-        url: `/movie/top_rated`,
+        url: `/tv/top_rated`,
         params: { page, api_key: API_KEY },
       }),
     }),

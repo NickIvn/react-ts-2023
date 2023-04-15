@@ -17,12 +17,8 @@ const getPosterURL = (poster_path: string | null | undefined) => {
 export default function Card({ movie, onClick }: ICardProps) {
   return (
     <div className="post" data-testid="post" onClick={onClick}>
-      <img
-        src={getPosterURL(movie.poster_path)}
-        alt={movie.title}
-        width="200"
-      />
-      <h2>{movie.title}</h2>
+      <img src={getPosterURL(movie.poster_path)} alt={movie.name} width="200" />
+      <h2>{movie.name}</h2>
       <p>
         <span className="rate">Rating:</span>
         {movie.vote_average}

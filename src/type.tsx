@@ -19,7 +19,7 @@ export interface IRouter {
 
 export interface IMovie {
   id: number;
-  title: string;
+  name: string;
   poster_path: string;
   vote_average: number;
   origin_country: string;
