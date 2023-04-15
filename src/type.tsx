@@ -19,11 +19,15 @@ export interface IRouter {
 
 export interface IMovie {
   id: number;
-  name: string;
+  title: string;
   poster_path: string;
   vote_average: number;
   origin_country: string;
   overview?: string;
+}
+
+export interface IMovieResult {
+  results: IMovie[];
 }
 
 export interface IForm {
