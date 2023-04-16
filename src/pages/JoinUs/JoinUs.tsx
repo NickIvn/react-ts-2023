@@ -8,10 +8,6 @@ import { RootState } from "../../store/store";
 import { addCard, removeCard } from "../../store/reducer/formSlice";
 
 const JoinUs = () => {
-  // const [members, setmembers] = useState<IForm[]>([]);
-  // const updatemember = useCallback((newCard: IForm) => {
-  //   setmembers((prevmembers) => [...prevmembers, newCard]);
-  // }, []);
   const dispatch = useDispatch();
   const members = useSelector((state: RootState) => state.form.cards);
 
