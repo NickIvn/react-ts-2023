@@ -1,7 +1,7 @@
 import {
   useSearchMoviesQuery,
   useGetTopRatedMoviesQuery,
-} from "../../service/movieApi";
+} from "../../service/ApiService";
 import { IMovie, IMovieResult } from "../../type";
 import Card from "../Card/Card";
 import Modal from "../Modal/Modal";
@@ -14,10 +14,6 @@ interface CardsProps {
 }
 
 const Cards = ({ searchQuery }: CardsProps) => {
-  // // eslint-disable-next-line react-hooks/rules-of-hooks
-  // const movieQuery = searchQuery
-  //   ? useSearchMoviesQuery(searchQuery)
-  //   : useGetTopRatedMoviesQuery(1);
   const topRatedMoviesQuery = useGetTopRatedMoviesQuery(1);
   const searchMoviesQuery = useSearchMoviesQuery(searchQuery || "");
   const movieQuery = searchQuery ? searchMoviesQuery : topRatedMoviesQuery;

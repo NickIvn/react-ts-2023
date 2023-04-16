@@ -36,22 +36,3 @@ describe("Card", () => {
     expect(screen.getByTestId("form")).toBeInTheDocument();
   });
 });
-
-// describe("Card", () => {
-//   it("renders member data correctly", () => {
-//     render(<Card member={member} />);
-//     expect(screen.getByText("Mock Name")).toBeInTheDocument();
-//     expect(screen.getByText("Mock Surname")).toBeInTheDocument();
-//     expect(screen.getByText("DoB: 2023-03-26")).toBeInTheDocument();
-//     expect(screen.getByText("gender:")).toHaveTextContent(
-//       "gender: Mock Gender"
-//     );
-//     expect(screen.getByText("category:")).toHaveTextContent(
-//       "category: Mock Category"
-//     );
-//     expect(screen.getByAltText("Mock Name")).toHaveAttribute(
-//       "src",
-//       "https://example.com/mock-image.jpg"
-//     );
-//   });
-// });
