@@ -14,10 +14,13 @@ interface CardsProps {
 }
 
 const Cards = ({ searchQuery }: CardsProps) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const movieQuery = searchQuery
-    ? useSearchMoviesQuery(searchQuery)
-    : useGetTopRatedMoviesQuery(1);
+  // // eslint-disable-next-line react-hooks/rules-of-hooks
+  // const movieQuery = searchQuery
+  //   ? useSearchMoviesQuery(searchQuery)
+  //   : useGetTopRatedMoviesQuery(1);
+  const topRatedMoviesQuery = useGetTopRatedMoviesQuery(1);
+  const searchMoviesQuery = useSearchMoviesQuery(searchQuery || "");
+  const movieQuery = searchQuery ? searchMoviesQuery : topRatedMoviesQuery;
   const { data: movieResult = {}, isFetching } = movieQuery;
   const { results: movies = [] } = movieResult as IMovieResult;
 
