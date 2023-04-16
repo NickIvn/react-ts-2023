@@ -1,29 +1,29 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { IMovie, IMovieResult } from "../type";
 
-const API_KEY = "6eaa8116c5dea92c1c42dca1718cbc6e";
-const BASE_URL = "https://api.themoviedb.org/3";
+const api_key = "6eaa8116c5dea92c1c42dca1718cbc6e";
+const base_url = "https://api.themoviedb.org/3";
 
 export const movieApi = createApi({
   reducerPath: "movieApi",
-  baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
+  baseQuery: fetchBaseQuery({ baseUrl: base_url }),
   endpoints: (builder) => ({
     searchMovies: builder.query<IMovieResult, string>({
       query: (searchQuery) => ({
         url: `/search/tv`,
-        params: { query: searchQuery, api_key: API_KEY },
+        params: { query: searchQuery, api_key: api_key },
       }),
     }),
     getTopRatedMovies: builder.query<IMovieResult[], number>({
       query: (page = 1) => ({
         url: `/tv/top_rated`,
-        params: { page, api_key: API_KEY },
+        params: { page, api_key: api_key },
       }),
     }),
     getMovieDetails: builder.query<IMovie, number>({
       query: (movieId) => ({
         url: `/movie/${movieId}`,
-        params: { api_key: API_KEY },
+        params: { api_key: api_key },
       }),
     }),
   }),

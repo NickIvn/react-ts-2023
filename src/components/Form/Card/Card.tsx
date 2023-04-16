@@ -1,5 +1,4 @@
 import React from "react";
-// import { MemberProps } from "../../../type";
 import { IForm } from "../../../type";
 import "./Card.css";
 
@@ -13,13 +12,6 @@ const Card = ({ member, onRemove }: Form) => {
     onRemove(member.id);
   };
 
-  // export class Card extends Component<MemberProps> {
-  //   constructor(props: MemberProps) {
-  //     super(props);
-  //   }
-
-  // render() {
-  //   const member = this.props.member;
   return (
     <div className="form" data-testid="form">
       <span className="form-remove" onClick={handleRemoveClick}>
