@@ -1,27 +1,42 @@
-import React, { Component } from "react";
-import { MemberProps } from "../../../type";
+import React from "react";
+// import { MemberProps } from "../../../type";
+import { IForm } from "../../../type";
 import "./Card.css";
 
-export class Card extends Component<MemberProps> {
-  constructor(props: MemberProps) {
-    super(props);
-  }
-
-  render() {
-    const item = this.props.member;
-    return (
-      <div className="form" data-testid="form">
-        <img src={item.imageUrl} alt={item.name} height="200" />
-        <h2>{item.name}</h2>
-        <h2>{item.surname}</h2>
-        <p>DoB: {item.date}</p>
-        <div className="form-gender">
-          gender: <span>{item.gender}</span>{" "}
-        </div>
-        <div className="form-category">
-          category: <span>{item.category}</span>{" "}
-        </div>
-      </div>
-    );
-  }
+interface Form {
+  member: IForm;
+  onRemove: (id: number) => void;
 }
+
+const Card = ({ member, onRemove }: Form) => {
+  const handleRemoveClick = () => {
+    onRemove(member.id);
+  };
+
+  // export class Card extends Component<MemberProps> {
+  //   constructor(props: MemberProps) {
+  //     super(props);
+  //   }
+
+  // render() {
+  //   const member = this.props.member;
+  return (
+    <div className="form" data-testid="form">
+      <span className="form-remove" onClick={handleRemoveClick}>
+        &times;
+      </span>
+      <img src={member.imageUrl} alt={member.name} height="200" />
+      <h2>{member.name}</h2>
+      <h2>{member.surname}</h2>
+      <p>DoB: {member.date}</p>
+      <div className="form-gender">
+        gender: <span>{member.gender}</span>{" "}
+      </div>
+      <div className="form-category">
+        category: <span>{member.category}</span>{" "}
+      </div>
+    </div>
+  );
+};
+
+export default Card;
