@@ -1,0 +1,110 @@
+{"products": [
+    {
+      "id": 1,
+      "title": "Likya Yolu",
+      "country": "Turkiye",
+      "length": "509 km",
+      "difficulty": "medium",
+      "description": "A marked long-distance hiking trail in southwestern Turkey around part of the coast of ancient Lycia. It  stretches from Hisarönü (Ovacık), near Fethiye, to Aşağı Karaman in Konyaaltı. It is waymarked with red and white stripes of the GR footpath convention.",
+      "imageUrl": "https://images.unsplash.com/photo-1595267374112-9ec6eb71284b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Camino de Santiago",
+      "country": "Spain",
+      "length": "1150 km",
+      "difficulty": "medium",
+      "description": "Known in English as the Way of St James, is a network of pilgrims' ways or pilgrimages leading to the shrine of the apostle Saint James the Great in the cathedral of Santiago de Compostela in Galicia in northwestern Spain, where tradition holds that the remains of the apostle are buried.",
+      "imageUrl": "https://images.unsplash.com/photo-1562350949-81f4cb180585?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1902&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Pacific Crest Trail",
+      "country": "USA",
+      "length": "4270 km",
+      "difficulty": "medium",
+      "description": "Long-distance hiking and equestrian trail closely aligned with the highest portion of the Cascade and Sierra Nevada mountain ranges, which lie 100 to 150 miles (160 to 240 km) east of the U.S. Pacific coast. ",
+      "imageUrl": "https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
+    {
+      "id": 4,
+      "title": "Sikoku Piligrimage",
+      "country": "Japan",
+      "length": "1400 km",
+      "difficulty": "medium",
+      "description": "A multi-site pilgrimage of 88 temples associated with the Buddhist monk Kūkai (Kōbō Daishi) on the island of Shikoku, Japan. A popular and distinctive feature of the island's cultural landscape, and with a long history, large numbers of pilgrims, known as henro.",
+      "imageUrl": "https://images.unsplash.com/photo-1533240332313-0db49b459ad6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
+    {
+      "id": 5,
+      "title": "Bibbulmun Track",
+      "country": "Australia",
+      "length": "1000 km",
+      "difficulty": "medium",
+      "description": "A long-distance walk trail in Western Australia. It runs from Kalamunda in the east of Perth to Albany.The name comes from the Bibbulmun, or Noongar people, Indigenous Australians from the Perth area.",
+      "imageUrl": "https://images.unsplash.com/photo-1539183204366-63a0589187ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
+    {
+      "id": 6,
+      "title": "Tour de Mont Blanc",
+      "country": "France, Italy, Switzerland",
+      "length": "165 km",
+      "difficulty": "medium",
+      "description": "One of the most popular long-distance walks in Europe. It circles the Mont Blanc massif, covering a distance of roughly 165 km with 10 km of ascent/descent and passing through parts of Switzerland, Italy and France.",
+      "imageUrl": "https://images.unsplash.com/photo-1508766206392-8bd5cf550d1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 7,
+      "title": "GR10",
+      "country": "France",
+      "length": "866 km",
+      "difficulty": "medium",
+      "description": "A French GR footpath, or hiking trail, that runs the length of the Pyrenees Mountains. It roughly parallels the French–Spanish border on the French side, from Hendaye on the Bay of Biscay to Banyuls-sur-Mer on the Mediterranean Sea",
+      "imageUrl": "https://images.unsplash.com/photo-1570641963303-92ce4845ed4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 8,
+      "title": "Karya Yolu",
+      "country": "Turkiye",
+      "length": "820 km",
+      "difficulty": "medium",
+      "description": "The Carian Trail is a footpath exploring the South Western corner of Turkey through the modern provinces of Muğla and Aydın. The trail is officially opened in 2013 and winds through some of the lesser known regions of Turkey.",
+      "imageUrl": "https://images.unsplash.com/photo-1597947700031-fc9c8276dd6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
+    {
+      "id": 9,
+      "title": "Coast to coast walk",
+      "country": "UK",
+      "length": "3500 km",
+      "difficulty": "medium",
+      "description": "A long-distance footpath between the west and east coasts of Northern England. Devised by Alfred Wainwright, it passes through three contrasting national parks: the Lake District National Park, the Yorkshire Dales National Park, and the North York Moors National Park.",
+      "imageUrl": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=352&q=80"
+    },
+    {
+      "id": 10,
+      "title": "Appalachian Trail",
+      "country": "USA",
+      "length": "165 km",
+      "difficulty": "medium",
+      "description": "A hiking trail in the Eastern United States,  between Springer Mountain in Georgia and Mount Katahdin in Maine, and passing through 14 states, the longest hiking-only trail in the world.",
+      "imageUrl": "https://images.unsplash.com/photo-1516739711484-6f80025660c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
+    {
+      "id": 11,
+      "title": "Trans Canada Trail",
+      "country": "Canada",
+      "length": "24 000 km",
+      "difficulty": "medium",
+      "description": "A cross-Canada system of greenways, waterways, and roadways that stretches from the Atlantic to the Pacific to the Arctic oceans. The trail extends over 24,000 km, it is now the longest recreational, multi-use trail network in the world. ",
+      "imageUrl": "https://images.unsplash.com/photo-1592388748465-8c4dca8dd703?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    },
+    {
+      "id": 12,
+      "title": "Larapinta Trail",
+      "country": "Australia",
+      "length": "223 km",
+      "difficulty": "medium",
+      "description": "An extended walking track in the Northern Territory of Australia. with the eastern end at Alice Springs and the western end at Mount Sonder, one of the territory's highest mountains. It follows the West MacDonnell Ranges in the West MacDonnell National Park.",
+      "imageUrl": "https://images.unsplash.com/photo-1481973946307-512988dde8b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    }
+  ]}
