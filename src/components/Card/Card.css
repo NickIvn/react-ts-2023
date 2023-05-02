@@ -1,0 +1,55 @@
+.post {
+  background-color: rgb(220, 220, 220);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 16px;
+  max-width: 220px;
+  padding: 16px;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.post:hover img {
+  filter: brightness(80%) contrast(120%);
+}
+
+
+.post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.post h2 {
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgb(79, 106, 146);
+  font-style: italic;
+}
+
+.post p {
+  margin: 5px 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.post p span.rate {
+  font-weight: bold;
+  color: rgb(113, 182, 169);
+}
+
+.post p span.country {
+  font-weight: bold;
+  color: rgb(66, 73, 173);
+}
