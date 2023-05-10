@@ -1,0 +1,49 @@
+.post {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  background-color: rgba(221, 221, 221, 0.9);
+}
+
+.post img {
+  display: block;
+  margin: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border: 2px solid #aeadad;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.post h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: rgb(93, 13, 205);
+}
+
+.post .post-length,
+.post .post-difficulty {
+  margin-top: 10px;
+}
+
+.post .post-length span,
+.post .post-difficulty span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.post p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
